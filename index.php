@@ -65,7 +65,7 @@
   <a href="#join" id="joinBtn" class="fa fa-pencil"></a>
 </div>
 
-<div id="content-container">
+<div class="content-container">
 
 	<div id="home"></div>
 
@@ -129,17 +129,17 @@
 
     <div class="x">X</div>
 
-    <form id="form">
+    <form id="form" action="join.php" method="post">
       First name:<br>
-      <input type="text" name="firstname">
+      <input type="text" name="first_name">
       <br>
       Last name(Optional):<br>
-      <input type="text" name="lastname">
+      <input type="text" name="last_name">
       <br>
-      E-mail:<br>
+      <!-- E-mail:<br>
       <input type="text" name="e-mail">
-      <br>
-      <input type="submit" value="Submit">
+      <br> -->
+      <input type="submit" value="Join!">
     </form>
     
   </div>

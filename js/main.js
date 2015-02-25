@@ -49,12 +49,8 @@ $(document).ready(function() {
   }).mouseup(function(){
     $('.button p').css('font-size', '25px');
     $('#modal').fadeIn('slow');
-    $('#content-container').removeClass('sharp');
-    $('.button').removeClass('sharp');
-    $('#roster').removeClass('sharp');
-    $('#content-container').addClass('blured');
-    $('.button').addClass('blured');
-    $('#roster').addClass('blured');
+    $('#content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').removeClass('sharp');
+    $('#content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').addClass('blured');
     $('.corner').css('z-index', '99');
     $('#circleNavButtons').css('z-index', '99');
   });
@@ -62,12 +58,8 @@ $(document).ready(function() {
   //Control for exiting modal window
   $('.x').click(function() {
     $('#modal').fadeOut('slow');
-    $('#content-container').removeClass('blured');
-    $('.button').removeClass('blured');
-    $('#roster').removeClass('blured');
-    $('#content-container').addClass('sharp');
-    $('.button').addClass('sharp');
-    $('#roster').addClass('sharp');
+    $('#content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').removeClass('blured');
+    $('#content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').addClass('sharp');
     $('.corner').css('z-index', '99');
     $('#circleNavButtons').css('z-index', '99');
     $('#about').show();
