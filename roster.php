@@ -31,5 +31,10 @@
 			?>
 		</ol>
 	</div>
+
+	<footer>
+		<p>Designed and developed by <a href="http://galatea.stetson.edu/~mwood/">Michael Wood</a></p>
+	</footer>
+
 </body>
 </html>
