@@ -150,7 +150,7 @@
 </div>
 
 <footer>
-	<p>Designed by Michael Wood</p>
+	<p>Designed and developed by <a href="http://galatea.stetson.edu/~mwood/">Michael Wood</a></p>
 </footer>
 
 </body>
