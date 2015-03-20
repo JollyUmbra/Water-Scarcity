@@ -59,8 +59,8 @@
 
 <div id="circleNavButtons">
   <a href="#home" id="homeBtn" class="fa fa-home"></a>
-  <a href="#national" id="nationalBtn" class="fa fa-globe"></a>
-  <a href="#global" id="globalBtn" class="fa fa-flag"></a>
+  <a href="#global" id="nationalBtn" class="fa fa-globe"></a>
+  <a href="#national" id="globalBtn" class="fa fa-flag"></a>
   <a href="#about" id="aboutBtn" class="fa fa-comment"></a>
   <a href="#join" id="joinBtn" class="fa fa-pencil"></a>
 </div>
@@ -103,7 +103,7 @@
 
 	<div class="section-left">
 		<img src="images/placeholder-image.png" alt="placerholder">
-		<p>Places like Florida's entire water supplies are just a shallow lens of water resting on top of a saltwater bed. As we use this fresh water, the salt water pushes up into that space and prevents fresh water from filling back in. This results in the loss of a usable water supply which could greatly damage not only the people of Florida, but also the delicate ecosystems of some of the swamps and lakes.</p>
+		<p>Florida's entire water supply is just a shallow lens of water resting on top of a saltwater bed. As we use this fresh water, the salt water pushes up into that space and prevents fresh water from filling back in. This results in the loss of a usable water supply which could greatly damage not only the people of Florida, but also the delicate ecosystems of some of the swamps and lakes.</p>
 	</div>
 
 	<h2 id="about">About the Cause</h2>

@@ -10,7 +10,7 @@ $(document).ready(function() {
   $(window).scroll(function() {
     scrollPos = $('body').scrollTop();
     setTimeout(function() {
-      if (scrollPos > $('#national').offset().top){
+      if (scrollPos > $('#global').offset().top){
         $('nav').fadeOut('slow');
         $('#circle-nav-container').delay(100).fadeIn('slow');
         $('.corner').css('z-index', '99');
@@ -74,7 +74,7 @@ $(document).ready(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
           $('html,body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 100
           }, 1000);
           return false;
         }
