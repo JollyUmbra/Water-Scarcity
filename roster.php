@@ -11,9 +11,11 @@
 
 	<link type="text/css" rel="stylesheet" href="stylesheets/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Oswald|Quattrocento+Sans' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 	<div class="content-container" id="roscon">
+		<a href="index.php" id="roster-back" class="fa fa-chevron-left fa-4x"></a>
 		<h1 id="roster_header">Everyone who has joined the cause!</h1>
 
 		<ol id="roster-list">
