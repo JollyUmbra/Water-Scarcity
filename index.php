@@ -15,6 +15,7 @@
 	<link type="text/css" rel="stylesheet" href="stylesheets/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Oswald|Quattrocento+Sans' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/icon" href="favicon.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 </head>
