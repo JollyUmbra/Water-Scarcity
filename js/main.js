@@ -5,6 +5,7 @@ $(document).ready(function() {
   //Hide Circle nav on page load
   $('#circle-nav-container').hide();
   $('#circleNavButtons').hide();
+  $(".index-image").css("opacity", "0");
 
   //Scroll detection for nav bar transition
   $(window).scroll(function() {
@@ -23,6 +24,13 @@ $(document).ready(function() {
         $('nav').delay(100).fadeIn('slow');
       }
     }, 100);
+
+    //Scroll detection for image fading
+    $(".index-image").each(function() {
+      if (scrollPos > $(this).offset().top - 400  ){
+        $(this).animate({opacity: 1}, 1000);
+      } 
+    });
   });
 
   var navPos=$('body').scrollTop();
@@ -82,4 +90,3 @@ $(document).ready(function() {
     });
   });
 });
-
