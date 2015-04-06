@@ -18,6 +18,7 @@
 	<div class="content-container" id="roscon">
 		<a href="index.php" id="roster-back" class="fa fa-chevron-left fa-4x"></a>
 		<h1 id="roster_header">Everyone who has joined the cause!</h1>
+		<a href="downloads/10-Tips-To-Conserve-Water.pdf" id="download" target="_blank">Here are some ways you can help!</a>
 
 		<ol id="roster-list">
 			<?php 

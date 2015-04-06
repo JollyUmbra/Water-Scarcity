@@ -34,7 +34,7 @@
 <?php 
 	$ip_log = 'iplog.txt';
 	$ipaddress = $_SERVER['REMOTE_ADDR'];
-	$result = str_replace(",", " ", $ipaddress);
+	$result = str_replace(".", " ", $ipaddress);
 	$fp = fopen($ip_log, "w");
 	fwrite($fp, $result);
 	fclose($fp);
@@ -119,7 +119,7 @@
 
 	<p class="about-us">In addition to helping the cause, by visiting this website, you have contributed to a physical art piece in the Hand Art Center in DeLand, FL that exists to further illustrate the message of this cause and serves as another way for us all to collaborate in the education of this material.</p>
 
-	<h3 id="join">Find out how you can help the world!</h3>
+	<h3 id="join">Find out how you can help the world! <br>Take the pledge to commit to water conservation!</h3>
 
 </div>
 

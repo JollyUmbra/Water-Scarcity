@@ -28,6 +28,7 @@ img{
   height: 200%;
   margin: 0 auto;
   overflow: hidden;
+  min-height: 1000px;
 }
 
 .stop-scrolling {
@@ -292,10 +293,6 @@ nav{
   width: 92%;
 }
 
-#global{
-  text-align: right;
-}
-
 #about, #join{
   font-family: 'Oswald', sans-serif;
   font-size: 2em;
@@ -492,6 +489,7 @@ footer{
     text-align: center;
     line-height: 150px;
     color: $orange;
+    margin: 0;
   }
 
   a{
@@ -503,7 +501,7 @@ footer{
 
     &:visited{
       color: $skyBlue;
-    }
+    };
 
     &:hover{
       color: #fff;
@@ -528,8 +526,42 @@ footer{
 
 #roster-list{
   margin-top: 50px;
-  margin-left: 40%;
+  margin-left: 38%;
   font-size: 2em;
+}
+
+#download{
+    transition: color .5s linear;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 38%;
+
+    &:link{
+      color: $orange;
+    };
+
+    &:visited{
+      color: $skyBlue;
+    };
+
+    &:hover{
+      color: #fff;
+    };
+}
+
+#roster-back{
+  text-decoration: none;
+  margin-top: 1%;
+  margin-left: 3%;
+  position: absolute;
+
+  &:link{
+    color: $orange;
+  }
+
+  &:visited{
+    color: $orange;
+  }
 }
 
 /*End Roster page styles*/
@@ -548,6 +580,10 @@ footer{
 
   #banner h1{
     font-size: 2.5em;
+  }
+
+  #roster-list, #download{
+    margin-left: 35%;
   }
 }
 
@@ -581,6 +617,14 @@ footer{
       padding-left: 50%;
     }
   }
+
+  #roster-list, #download{
+    margin-left: 30%;
+  }
+
+  #roster-back{
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 900px){
@@ -609,6 +653,10 @@ footer{
     img{
       padding-left: 40%;
     }
+  }
+
+  #roster_header{
+    font-size: 2em;
   }
 }
 
@@ -641,6 +689,14 @@ footer{
   #modal{
     width: 90%;
   }
+
+  #roster_header{
+    font-size: 1.5em;
+  }
+
+  #roster-list, #download{
+    margin-left: 25%;
+  }
 }
 
 @media screen and (max-width: 650px){
@@ -648,6 +704,10 @@ footer{
     #bannerCTA{
       left: 20%;
     }
+  }
+
+  #roster-list, #download{
+    margin-left: 20%;
   }
 }
 
@@ -683,6 +743,16 @@ footer{
       left: 15%;
     }
   }
+
+  #roster-list{
+    margin-left: 18%;
+    font-size: 1.5em;
+  }
+
+  #download{
+    margin-left: 18%;
+    font-size: .9em;
+  }
 }
 
 @media screen and (max-width: 450px){
@@ -712,6 +782,19 @@ footer{
       top: 25%;
       left: 14%;
     }
+  }
+
+  #roster_header{
+    font-size: 1em;
+  }
+
+  #roster-list{
+    font-size: 1.5em;
+    margin-left: 10%;
+  }
+
+  #download{
+    margin-left: 10%;
   }
 }
 /*End media queries*/
