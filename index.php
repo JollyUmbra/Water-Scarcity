@@ -94,7 +94,7 @@
 
 	<div class="section-left">
 		<img class="index-image" src="images/california.png" alt="Illustration of California">
-		<p>California faces a fourth consecutive year of droughts as a result of poor water management. This lack of water hurts the farming and thus the economy. If something isn't done, California could face serious natural and economic consequences.</p>
+		<p>California was facing a fourth consecutive year of droughts as a result of poor water management. Just recently they enacted laws to cut back on water usage by 25%. This is a good start, but more must be done to fix their water problems.</p>
 	</div>
 	
 	<div class="section-right">
@@ -115,11 +115,20 @@
 
 	<p class="about-us">When looking at such a global problem, it is often hard to think about how your actions can affect such a big issue. This website is serving as a way for people to unite against this issue in their own individual way. By signing the roster, you not only contribute to the cause, but you will also be given a list of ways that you can help fix this global issue in your own small way.</p>
 
-	<br>
-
-	<p class="about-us">In addition to helping the cause, by visiting this website, you have contributed to a physical art piece in the Hand Art Center in DeLand, FL that exists to further illustrate the message of this cause and serves as another way for us all to collaborate in the education of this material.</p>
-
 	<h3 id="join">Find out how you can help the world! <br>Take the pledge to commit to water conservation!</h3>
+
+</div>
+
+<div id="load-modal-continer">
+
+  <div id="load-modal">
+
+    <div class="x">X</div>
+
+    <h2 style="font-family: 'Oswald', sans-serif; margin-top: 100px;">Welcome! Come learn about water scarcity!</h2>
+    <p style="font-family: 'Quattrocento Sans', sans-serif; margin: 0 50px 0;">This site serves to educate people about the very big problem of water scarcity all around the world. It also serves as a way to interact with an art installation in a gallery. By visiting the website, you help slow the flow of water from a leaking water bucket. When visiting, an audio response is played as well using your ip address to apply audio effects to a recording of flowing water. By learning about the cause you can contribute to this art piece, and if you really feel committed, you can sign the roster to commit to water conservation. On the page after signing up, you can view a PDF with some tips to how you can help!</p>
+    
+  </div>
 
 </div>
 
@@ -130,6 +139,7 @@
     <div class="x">X</div>
 
     <form id="form" action="join.php" method="post">
+      <h3>Be courteous. This is public and monitored.</h3>
       First name:<br>
       <input type="text" name="first_name">
       <br>

@@ -5,6 +5,8 @@ $(document).ready(function() {
   //Hide Circle nav on page load
   $('#circle-nav-container').hide();
   $('#circleNavButtons').hide();
+
+  //Hide images on page load
   $(".index-image").css("opacity", "0");
 
   //Scroll detection for nav bar transition
@@ -28,7 +30,7 @@ $(document).ready(function() {
     //Scroll detection for image fading
     $(".index-image").each(function() {
       if (scrollPos > $(this).offset().top - 400  ){
-        $(this).animate({opacity: 1}, 1000);
+        $(this).animate({opacity: 1}, 500);
       } 
     });
   });
@@ -51,6 +53,14 @@ $(document).ready(function() {
 
   //Modal window control and button animating
   $('#modal').hide();
+
+  //Blur on load for instructional modal window
+  $('.content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').removeClass('sharp');
+  $('.content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').addClass('blured');
+  $('.corner').css('z-index', '99');
+  $('#circleNavButtons').css('z-index', '99');
+  //End blurring
+
   $('.button').mousedown(function(){
     $('.button p')
     .css('font-size', '35px');
@@ -66,6 +76,7 @@ $(document).ready(function() {
   //Control for exiting modal window
   $('.x').click(function() {
     $('#modal').fadeOut('slow');
+    $('#load-modal').fadeOut('slow');
     $('.content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').removeClass('blured');
     $('.content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').addClass('sharp');
     $('.corner').css('z-index', '99');
@@ -90,3 +101,18 @@ $(document).ready(function() {
     });
   });
 });
+
+// Detect if no movement has occured for page refresh
+
+var timer = null;
+
+function goAway() {
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+        window.location = 'http://galatea.stetson.edu/~mwood/ScarceSupply';
+    }, 15000);
+}
+
+window.addEventListener('mousemove', goAway, true);
+
+goAway();
