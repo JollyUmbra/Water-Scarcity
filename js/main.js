@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var scrollPos = $('body').scrollTop();
+  var interacted = false;
 
   //Hide Circle nav on page load
   $('#circle-nav-container').hide();
@@ -31,7 +32,7 @@ $(document).ready(function() {
     $(".index-image").each(function() {
       if (scrollPos > $(this).offset().top - 400  ){
         $(this).animate({opacity: 1}, 500);
-      } 
+      }
     });
   });
 
@@ -75,6 +76,10 @@ $(document).ready(function() {
 
   //Control for exiting modal window
   $('.x').click(function() {
+    if(!interacted){
+        interacted = true;
+        goAway();
+    }
     $('#modal').fadeOut('slow');
     $('#load-modal').fadeOut('slow');
     $('.content-container, .button, #roster, footer, nav, #circle-nav-container, #circleNavButtons').removeClass('blured');
@@ -103,7 +108,6 @@ $(document).ready(function() {
 });
 
 // Detect if no movement has occured for page refresh
-
 var timer = null;
 
 function goAway() {
@@ -114,5 +118,3 @@ function goAway() {
 }
 
 window.addEventListener('mousemove', goAway, true);
-
-goAway();
